@@ -1,0 +1,646 @@
+@import '../../styles/tokens.css';
+
+/* Breakpoints baseados em Radix UI Themes */
+/* initial: 0px (Phones portrait) */
+/* xs: 520px (Phones landscape) */
+/* sm: 768px (Tablets portrait) */
+/* md: 1024px (Tablets landscape) */
+/* lg: 1280px (Laptops) */
+/* xl: 1640px (Desktops) */
+
+.base {
+  display: grid;
+  width: 100%;
+}
+
+/* ============ COLUNAS - Initial (0px) ============ */
+.cols1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.cols2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cols3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cols4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.cols5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.cols6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.cols12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+/* ============ COLUNAS - xs (520px) ============ */
+@media (min-width: 520px) {
+  .cols1\@xs {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .cols2\@xs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cols3\@xs {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .cols4\@xs {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .cols5\@xs {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .cols6\@xs {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .cols12\@xs {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+/* ============ COLUNAS - sm (768px) ============ */
+@media (min-width: 768px) {
+  .cols1\@sm {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .cols2\@sm {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cols3\@sm {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .cols4\@sm {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .cols5\@sm {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .cols6\@sm {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .cols12\@sm {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+/* ============ COLUNAS - md (1024px) ============ */
+@media (min-width: 1024px) {
+  .cols1\@md {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .cols2\@md {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cols3\@md {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .cols4\@md {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .cols5\@md {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .cols6\@md {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .cols12\@md {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+/* ============ COLUNAS - lg (1280px) ============ */
+@media (min-width: 1280px) {
+  .cols1\@lg {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .cols2\@lg {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cols3\@lg {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .cols4\@lg {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .cols5\@lg {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .cols6\@lg {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .cols12\@lg {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+/* ============ COLUNAS - xl (1640px) ============ */
+@media (min-width: 1640px) {
+  .cols1\@xl {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .cols2\@xl {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cols3\@xl {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .cols4\@xl {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .cols5\@xl {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .cols6\@xl {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .cols12\@xl {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+/* ============ GAP - Initial (0px) ============ */
+.gap0 {
+  gap: 0;
+}
+
+.gap1 {
+  gap: var(--space-1);
+}
+
+.gap2 {
+  gap: var(--space-2);
+}
+
+.gap3 {
+  gap: var(--space-3);
+}
+
+.gap4 {
+  gap: var(--space-4);
+}
+
+.gap5 {
+  gap: var(--space-5);
+}
+
+.gap6 {
+  gap: var(--space-6);
+}
+
+.gap8 {
+  gap: var(--space-8);
+}
+
+/* ============ GAP - xs (520px) ============ */
+@media (min-width: 520px) {
+  .gap0\@xs {
+    gap: 0;
+  }
+
+  .gap1\@xs {
+    gap: var(--space-1);
+  }
+
+  .gap2\@xs {
+    gap: var(--space-2);
+  }
+
+  .gap3\@xs {
+    gap: var(--space-3);
+  }
+
+  .gap4\@xs {
+    gap: var(--space-4);
+  }
+
+  .gap5\@xs {
+    gap: var(--space-5);
+  }
+
+  .gap6\@xs {
+    gap: var(--space-6);
+  }
+
+  .gap8\@xs {
+    gap: var(--space-8);
+  }
+}
+
+/* ============ GAP - sm (768px) ============ */
+@media (min-width: 768px) {
+  .gap0\@sm {
+    gap: 0;
+  }
+
+  .gap1\@sm {
+    gap: var(--space-1);
+  }
+
+  .gap2\@sm {
+    gap: var(--space-2);
+  }
+
+  .gap3\@sm {
+    gap: var(--space-3);
+  }
+
+  .gap4\@sm {
+    gap: var(--space-4);
+  }
+
+  .gap5\@sm {
+    gap: var(--space-5);
+  }
+
+  .gap6\@sm {
+    gap: var(--space-6);
+  }
+
+  .gap8\@sm {
+    gap: var(--space-8);
+  }
+}
+
+/* ============ GAP - md (1024px) ============ */
+@media (min-width: 1024px) {
+  .gap0\@md {
+    gap: 0;
+  }
+
+  .gap1\@md {
+    gap: var(--space-1);
+  }
+
+  .gap2\@md {
+    gap: var(--space-2);
+  }
+
+  .gap3\@md {
+    gap: var(--space-3);
+  }
+
+  .gap4\@md {
+    gap: var(--space-4);
+  }
+
+  .gap5\@md {
+    gap: var(--space-5);
+  }
+
+  .gap6\@md {
+    gap: var(--space-6);
+  }
+
+  .gap8\@md {
+    gap: var(--space-8);
+  }
+}
+
+/* ============ GAP - lg (1280px) ============ */
+@media (min-width: 1280px) {
+  .gap0\@lg {
+    gap: 0;
+  }
+
+  .gap1\@lg {
+    gap: var(--space-1);
+  }
+
+  .gap2\@lg {
+    gap: var(--space-2);
+  }
+
+  .gap3\@lg {
+    gap: var(--space-3);
+  }
+
+  .gap4\@lg {
+    gap: var(--space-4);
+  }
+
+  .gap5\@lg {
+    gap: var(--space-5);
+  }
+
+  .gap6\@lg {
+    gap: var(--space-6);
+  }
+
+  .gap8\@lg {
+    gap: var(--space-8);
+  }
+}
+
+/* ============ GAP - xl (1640px) ============ */
+@media (min-width: 1640px) {
+  .gap0\@xl {
+    gap: 0;
+  }
+
+  .gap1\@xl {
+    gap: var(--space-1);
+  }
+
+  .gap2\@xl {
+    gap: var(--space-2);
+  }
+
+  .gap3\@xl {
+    gap: var(--space-3);
+  }
+
+  .gap4\@xl {
+    gap: var(--space-4);
+  }
+
+  .gap5\@xl {
+    gap: var(--space-5);
+  }
+
+  .gap6\@xl {
+    gap: var(--space-6);
+  }
+
+  .gap8\@xl {
+    gap: var(--space-8);
+  }
+}
+
+/* ============ ALIGN ITEMS ============ */
+.alignStart {
+  align-items: start;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.alignEnd {
+  align-items: end;
+}
+
+.alignStretch {
+  align-items: stretch;
+}
+
+/* ============ JUSTIFY ITEMS ============ */
+.justifyStart {
+  justify-items: start;
+}
+
+.justifyCenter {
+  justify-items: center;
+}
+
+.justifyEnd {
+  justify-items: end;
+}
+
+.justifyBetween {
+  justify-content: space-between;
+}
+
+/* ============ GRID ITEM ============ */
+.item {
+  min-width: 0;
+}
+
+/* ============ COL SPAN - Initial ============ */
+.colSpan1 {
+  grid-column: span 1 / span 1;
+}
+
+.colSpan2 {
+  grid-column: span 2 / span 2;
+}
+
+.colSpan3 {
+  grid-column: span 3 / span 3;
+}
+
+.colSpan4 {
+  grid-column: span 4 / span 4;
+}
+
+.colSpan5 {
+  grid-column: span 5 / span 5;
+}
+
+.colSpan6 {
+  grid-column: span 6 / span 6;
+}
+
+.colSpan12 {
+  grid-column: span 12 / span 12;
+}
+
+/* ============ COL SPAN - xs (520px) ============ */
+@media (min-width: 520px) {
+  .colSpan1\@xs {
+    grid-column: span 1 / span 1;
+  }
+
+  .colSpan2\@xs {
+    grid-column: span 2 / span 2;
+  }
+
+  .colSpan3\@xs {
+    grid-column: span 3 / span 3;
+  }
+
+  .colSpan4\@xs {
+    grid-column: span 4 / span 4;
+  }
+
+  .colSpan5\@xs {
+    grid-column: span 5 / span 5;
+  }
+
+  .colSpan6\@xs {
+    grid-column: span 6 / span 6;
+  }
+
+  .colSpan12\@xs {
+    grid-column: span 12 / span 12;
+  }
+}
+
+/* ============ COL SPAN - sm (768px) ============ */
+@media (min-width: 768px) {
+  .colSpan1\@sm {
+    grid-column: span 1 / span 1;
+  }
+
+  .colSpan2\@sm {
+    grid-column: span 2 / span 2;
+  }
+
+  .colSpan3\@sm {
+    grid-column: span 3 / span 3;
+  }
+
+  .colSpan4\@sm {
+    grid-column: span 4 / span 4;
+  }
+
+  .colSpan5\@sm {
+    grid-column: span 5 / span 5;
+  }
+
+  .colSpan6\@sm {
+    grid-column: span 6 / span 6;
+  }
+
+  .colSpan12\@sm {
+    grid-column: span 12 / span 12;
+  }
+}
+
+/* ============ COL SPAN - md (1024px) ============ */
+@media (min-width: 1024px) {
+  .colSpan1\@md {
+    grid-column: span 1 / span 1;
+  }
+
+  .colSpan2\@md {
+    grid-column: span 2 / span 2;
+  }
+
+  .colSpan3\@md {
+    grid-column: span 3 / span 3;
+  }
+
+  .colSpan4\@md {
+    grid-column: span 4 / span 4;
+  }
+
+  .colSpan5\@md {
+    grid-column: span 5 / span 5;
+  }
+
+  .colSpan6\@md {
+    grid-column: span 6 / span 6;
+  }
+
+  .colSpan12\@md {
+    grid-column: span 12 / span 12;
+  }
+}
+
+/* ============ COL SPAN - lg (1280px) ============ */
+@media (min-width: 1280px) {
+  .colSpan1\@lg {
+    grid-column: span 1 / span 1;
+  }
+
+  .colSpan2\@lg {
+    grid-column: span 2 / span 2;
+  }
+
+  .colSpan3\@lg {
+    grid-column: span 3 / span 3;
+  }
+
+  .colSpan4\@lg {
+    grid-column: span 4 / span 4;
+  }
+
+  .colSpan5\@lg {
+    grid-column: span 5 / span 5;
+  }
+
+  .colSpan6\@lg {
+    grid-column: span 6 / span 6;
+  }
+
+  .colSpan12\@lg {
+    grid-column: span 12 / span 12;
+  }
+}
+
+/* ============ COL SPAN - xl (1640px) ============ */
+@media (min-width: 1640px) {
+  .colSpan1\@xl {
+    grid-column: span 1 / span 1;
+  }
+
+  .colSpan2\@xl {
+    grid-column: span 2 / span 2;
+  }
+
+  .colSpan3\@xl {
+    grid-column: span 3 / span 3;
+  }
+
+  .colSpan4\@xl {
+    grid-column: span 4 / span 4;
+  }
+
+  .colSpan5\@xl {
+    grid-column: span 5 / span 5;
+  }
+
+  .colSpan6\@xl {
+    grid-column: span 6 / span 6;
+  }
+
+  .colSpan12\@xl {
+    grid-column: span 12 / span 12;
+  }
+}
+
+/* ============ ROW SPAN ============ */
+.rowSpan1 {
+  grid-row: span 1 / span 1;
+}
+
+.rowSpan2 {
+  grid-row: span 2 / span 2;
+}
+
+.rowSpan3 {
+  grid-row: span 3 / span 3;
+}
+
+.rowSpan4 {
+  grid-row: span 4 / span 4;
+}

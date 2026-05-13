@@ -1,0 +1,26 @@
+@import '../../styles/tokens.css';
+
+.base {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 1;
+  color: var(--color-text);
+  cursor: default;
+}
+
+.sizeDefault {
+  font-size: var(--font-size-sm);
+}
+
+.sizeSm {
+  font-size: var(--font-size-xs);
+}
+
+.sizeLg {
+  font-size: var(--font-size-base);
+}
+
+.base[data-disabled] {
+  cursor: not-allowed;
+  opacity: 0.7;
+}

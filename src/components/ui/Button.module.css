@@ -1,0 +1,115 @@
+@import '../../styles/tokens.css';
+
+.base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  white-space: nowrap;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.base:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+.base:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Variantes */
+.variantDefault {
+  background-color: var(--color-primary-600);
+  color: white;
+  box-shadow: var(--shadow-sm);
+}
+
+.variantDefault:hover {
+  background-color: var(--color-primary-700);
+}
+
+.variantDestructive {
+  background-color: var(--color-error);
+  color: white;
+  box-shadow: var(--shadow-sm);
+}
+
+.variantDestructive:hover {
+  background-color: #dc2626;
+}
+
+.variantOutline {
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  box-shadow: var(--shadow-sm);
+}
+
+.variantOutline:hover {
+  background-color: var(--color-background-muted);
+}
+
+.variantSecondary {
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-900);
+  box-shadow: var(--shadow-sm);
+}
+
+.variantSecondary:hover {
+  background-color: var(--color-gray-200);
+}
+
+.variantGhost {
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+.variantGhost:hover {
+  background-color: var(--color-background-muted);
+}
+
+.variantLink {
+  background-color: transparent;
+  color: var(--color-primary-600);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  box-shadow: none;
+}
+
+.variantLink:hover {
+  color: var(--color-primary-700);
+}
+
+/* Tamanhos */
+.sizeDefault {
+  height: 2.5rem;
+  padding: 0 var(--space-4);
+}
+
+.sizeSm {
+  height: 2.25rem;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+}
+
+.sizeLg {
+  height: 2.75rem;
+  padding: 0 var(--space-8);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+}
+
+.sizeIcon {
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0;
+}
